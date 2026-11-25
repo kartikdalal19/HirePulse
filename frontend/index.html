@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HirePulse | AI Resume Matching</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <span>HirePulse</span>
+            </div>
+
+            <div class="sidebar-label">WORKSPACE</div>
+
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Overview</span>
+                </a>
+
+                <a href="screening.html" class="nav-item">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>New Screening</span>
+                </a>
+
+                <a href="upload-resumes.html" class="nav-item">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <span>Ranking Demo</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-label">ABOUT</div>
+
+            <nav class="sidebar-nav">
+                <a href="#features" class="nav-item">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Features</span>
+                </a>
+
+                <a href="#workflow" class="nav-item">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span>Workflow</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="profile-avatar">HP</div>
+                <div class="profile-info">
+                    <div class="profile-name">HirePulse</div>
+                    <div class="profile-role">AI Recruitment System</div>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Topbar -->
+            <header class="topbar">
+                <div class="breadcrumb">
+                    <span>Workspace</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="breadcrumb-active">Overview</span>
+                </div>
+
+                <div class="topbar-right">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        AI Matching System
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- Landing Dashboard -->
+            <section class="dashboard">
+
+                <!-- Hero -->
+                <div class="welcome-section">
+                    <div>
+                        <h1>HirePulse</h1>
+                        <p>Intelligent Resume Screening & Candidate Ranking</p>
+                    </div>
+
+                    <button class="primary-button" id="newScreeningBtn">
+                        <i class="fa-solid fa-plus"></i>
+                        Start Screening
+                    </button>
+                </div>
+
+
+                <!-- Hero Panel -->
+                <div class="panel screening-panel">
+                    <div class="screening-placeholder">
+
+                        <div class="upload-illustration">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <h2>Find the right candidate, intelligently.</h2>
+
+                        <p>
+                            Analyze resumes against job requirements using
+                            AI-powered semantic matching, experience evaluation
+                            and explainable scoring to identify the most relevant
+                            candidates.
+                        </p>
+
+                        <button class="primary-button" id="startAnalysisBtn">
+                            Start Candidate Analysis
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Features -->
+                <section id="features">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Core Capabilities</h3>
+                            <p>AI-driven tools for smarter candidate evaluation.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-grid">
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                            <h3>Semantic Skill Matching</h3>
+
+                            <p>
+                                Matches candidate skills with job requirements
+                                beyond exact keyword matches using semantic
+                                similarity.
+                            </p>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+
+                            <h3>Responsibility Evaluation</h3>
+
+                            <p>
+                                Evaluates relevant work evidence against job
+                                responsibilities, including partial matches.
+                            </p>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+
+                            <h3>Relevant Experience</h3>
+
+                            <p>
+                                Analyzes employment records, duration and
+                                relevance of experience to the target role.
+                            </p>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-chart-pie"></i>
+                            </div>
+
+                            <h3>Weighted Scoring</h3>
+
+                            <p>
+                                Calculates transparent match scores using
+                                weighted evaluation components.
+                            </p>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-file-circle-check"></i>
+                            </div>
+
+                            <h3>Resume Parsing</h3>
+
+                            <p>
+                                Extracts candidate profiles, education, skills
+                                and employment information from PDF and DOCX.
+                            </p>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+
+                            <h3>Explainable Results</h3>
+
+                            <p>
+                                Displays matched evidence, missing evidence
+                                and detailed component-wise evaluation.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Workflow -->
+                <section id="workflow">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>How HirePulse Works</h3>
+                            <p>A simple workflow for intelligent screening.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-grid">
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </div>
+
+                            <h3>01. Job Description</h3>
+
+                            <p>
+                                Submit a job description to extract skills,
+                                responsibilities, qualifications and experience.
+                            </p>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </div>
+
+                            <h3>02. Resume Upload</h3>
+
+                            <p>
+                                Upload multiple PDF or DOCX resumes for
+                                automated candidate evaluation.
+                            </p>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+
+                            <h3>03. AI Evaluation</h3>
+
+                            <p>
+                                Analyze skills, responsibilities, relevant
+                                experience and qualifications.
+                            </p>
+                        </div>
+
+
+                        <div class="panel">
+                            <div class="panel-icon">
+                                <i class="fa-solid fa-ranking-star"></i>
+                            </div>
+
+                            <h3>04. Candidate Ranking</h3>
+
+                            <p>
+                                Compare candidates through a ranked list,
+                                detailed scores and supporting evidence.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Ranking Preview -->
+                <div class="panel candidates-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <h3>Candidate Ranking Preview</h3>
+                            <p>Example of HirePulse candidate evaluation results.</p>
+                        </div>
+
+                        <button class="secondary-button" id="viewRankingBtn">
+                            Explore Screening
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+                                <tr>
+                                    <th>RANK</th>
+                                    <th>CANDIDATE</th>
+                                    <th>SKILLS</th>
+                                    <th>EXPERIENCE</th>
+                                    <th>MATCH SCORE</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>#1</td>
+                                    <td>Alex Morgan</td>
+                                    <td>4 / 5</td>
+                                    <td>3.2 Years</td>
+                                    <td>
+                                        <strong>87.6%</strong>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>#2</td>
+                                    <td>Jordan Lee</td>
+                                    <td>4 / 5</td>
+                                    <td>2.5 Years</td>
+                                    <td>
+                                        <strong>79.3%</strong>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>#3</td>
+                                    <td>Taylor Smith</td>
+                                    <td>3 / 5</td>
+                                    <td>1.8 Years</td>
+                                    <td>
+                                        <strong>72.8%</strong>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <p style="padding: 15px; font-size: 12px; opacity: 0.65;">
+                        Illustrative sample data — not actual candidate records.
+                    </p>
+
+                </div>
+
+
+                <!-- Final CTA -->
+                <div class="panel screening-panel">
+
+                    <div class="screening-placeholder">
+
+                        <div class="upload-illustration">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <h2>Ready to evaluate candidates?</h2>
+
+                        <p>
+                            Start a new screening session and discover how
+                            HirePulse transforms resume evaluation.
+                        </p>
+
+                        <button class="primary-button" id="finalScreeningBtn">
+                            Begin Screening
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Footer -->
+                
+<footer class="hp-footer">
+
+    <div class="hp-footer-divider"></div>
+
+    <div class="hp-footer-content">
+
+        <div class="hp-footer-brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <span class="hp-footer-title">HirePulse</span>
+        </div>
+
+        <p class="hp-footer-description">
+            AI-Powered Resume Matching System
+        </p>
+
+        <div class="hp-footer-credit">
+            Developed by
+            <a href="https://github.com/kartikdalal19"
+               target="_blank"
+               rel="noopener noreferrer">Kartik Dalal</a>
+        </div>
+
+        <a class="hp-footer-github"
+           href="https://github.com/kartikdalal19"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+
+        <div class="hp-footer-copyright">
+            &copy; 2026 HirePulse. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
