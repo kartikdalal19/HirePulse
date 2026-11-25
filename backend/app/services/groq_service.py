@@ -58,7 +58,7 @@ from app.config import settings
 
 class GroqService:
 
-    REQUEST_LIMIT = 3
+    REQUEST_LIMIT = 15
     WINDOW_SECONDS = 60
     MAX_RETRIES = 5
 
