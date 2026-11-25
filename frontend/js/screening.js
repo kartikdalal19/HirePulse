@@ -60,7 +60,7 @@ ${jobDescription}`;
             Analyzing...
         `;
 
-        const response = await fetch("http://127.0.0.1:8000/api/jd/analyze", {
+        const response = await fetch("https://hirepulse-k366.onrender.com/api/jd/analyze", {
             method: "POST",
             body: formData
         });
