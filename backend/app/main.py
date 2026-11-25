@@ -11,16 +11,29 @@ app = FastAPI(
     description="AI-powered resume matching and ranking application.",
     version="1.0.0"
 )
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=[
+#         "http://localhost:5500",
+#         "http://127.0.0.1:5500"
+#     ],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5500",
         "http://127.0.0.1:5500"
     ],
+    allow_origin_regex=r"https://.*\.onrender\.com",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 from app.api.resume_routes import router as resume_router
 app.include_router(jd_router)
 app.include_router(resume_router)
